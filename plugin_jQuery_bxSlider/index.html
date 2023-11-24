@@ -4,20 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Galerie d'images avec le plugin jQuery Fancy Box">
-	<title>Plugin jQuery Swipe Box</title>
-	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<meta name="description" content="Caroussel d'images avec le plugin jQuery BxSlider">
+	<title>Plugin jQuery Bx Slider</title>
+	<link rel="stylesheet" href="css/jquery.bxslider.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-    <script>
-      $(document).ready(function(){
-        $(".slider").bxSlider({
-        captions: true,
-        });
-      });
-    </script>
 </head>
 
 <body>
@@ -28,18 +18,29 @@
 	<main class="container">
 		<section>
 			<h2>Bx Slider Caroussel</h2>
-			<div class="slider">
-			  <div><img  src="img/hollywood1.jpg" title="Hollywood 1" /></div>
-			  <div><img  src="img/hollywood2.jpg" title="Hollywood 2" /></div>
-			  <div><img  src="img/hollywood3.jpg" title="Hollywood 3" /></div>
-			  <div><img  src="img/hollywood4.jpg" title="Hollywood 4" /></div>
+			<div class="bxslider">
+				<div><img src="img/hollywood1.jpg" alt="" title="Hollywood 1"></div>
+				<div><img src="img/hollywood2.jpg" alt="" title="Hollywood 2"></div>
+				<div><img src="img/hollywood3.jpg" alt="" title="Hollywood 3"></div>
+				<div><img src="img/hollywood4.jpg" alt="" title="Hollywood 4"></div>
 			</div>
-	</section>
+		</section>
 	</main>
 	<div class="footer">
 		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
 		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par <a href="https://www.cath2nos.com">Catherine Denos</a>.</p>
 	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script>
+	    $(document).ready(function(){
+	    	$('.bxslider').bxSlider({
+	    		mode: 'fade',
+    			captions: true
+	    	});
+	    });
+  	</script>
 </body>
 
 </html>

@@ -117,20 +117,15 @@ article {
 /* *****************************************************************
 DEMO
 ***************************************************************** */
-.gallery {
-  display:grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+
+.bx-wrapper .bx-caption {
+	background: rgba(255,255,255,.6);
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
 }
 
-.gallery a {
-  text-decoration: none;
-  margin: auto;
+.bx-wrapper .bx-caption span {
+	color:  black;
 }
-
-.gallery img {
-  display: block;
-}
-
-
 
